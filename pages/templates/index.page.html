@@ -3,10 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome page</title>
+    <title>Doreen_Atieno</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .section {
+            margin-bottom: 3rem;
+        }
+        .portfolio-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        .portfolio-item img {
+            width: 45%;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        @media (max-width: 768px) {
+            .portfolio-item {
+                flex-direction: column;
+                align-items: center;
+            }
+            .portfolio-item img {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome</h1>
-    
+    <header>
+        <h1>Doreen Atieno Onyango</h1>
+        <p>Software Developer & Hairdresser</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <h2>About Me</h2>
+  <p>
+            Ever since I was a child, I have been passionate about <span class="highlight">software development</span>. The idea of creating something that can solve real-world problems through code has always fascinated me.
+        </p>
+        <p>
+            Alongside my love for development, I also discovered a natural talent for <span class="highlight">hairdressing</span> at a young age. I realized this talent when I had the chance to plait someone's hair, a moment that was like a dream come true. My journey in hairdressing has been just as creative and rewarding as my journey in tech.
+        </p>
+        <p>
+            Over time, as I learned and watched others style hair, my passion for software development only grew stronger. I have come to understand that my creativity knows no bounds, whether I'm designing a beautiful hairstyle or crafting an elegant user interface.
+        </p>
+        <p>
+            Now, I am on a path to becoming a <span class="highlight">UX/UI developer</span>, where I can merge my technical skills with my artistic vision. I believe that my unique combination of passions—software development and creativity in hairdressing—will help me deliver intuitive and aesthetically pleasing user experiences.
+        </p>        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="section">
+            <h2>Portfolio</h2>
+            
+            <h3>Software Development Projects</h3>
+            <div class="portfolio-item">
+                <div>
+                    <h4>Agri-Mentor</h4>
+                    <p><h4>The Problem: </h4>Farmers in Kenya face numerous challenges, including unpredictable
+weather, pest infestations, and volatile market conditions. They often lack access to
+real-time, reliable advice tailored to their specific needs and local climate conditions. Existing
+solutions are fragmented, making it difficult for farmers to obtain cohesive and actionable
+information.</p>
+<p><h4>Our Solution:</h4> Agri-Mentor is an AI-driven decision support system that provides Kenyan
+farmers with personalized, real-time agricultural advice. By utilizing Go APIs and blockchain
+technology, the platform offers tailored recommendations on crop management, pest control,
+and market trends, ensuring data security and accessibility.</p>
+
+                </div>
+                <img src="your-project-image.jpg" alt="Project Image">
+            </div>
+
+            <div class="portfolio-item">
+                <div>
+                    <h4>Agiza</h4>
+                    <p>Agiza is a futuristic food delivery platform designed to make ordering meals easy, engaging, and efficient.</p>
+                </div>
+                <img src="your-project-image.jpg" alt="Project Image">
+            </div>
+
+            <h3>Hairdressing Styles</h3>
+            <div class="portfolio-item">
+                <div>
+                    <h4>Trendy-Styles</h4>
+                    <p>With a natural talent for hairdressing that I discovered at a young age, I have honed my skills by consistently exploring a variety of hairstyles tailored to each client's unique preferences. From classic looks to modern trends, I take pride in delivering excellent results that not only meet but exceed my clients' expectations. My attention to detail, creativity, and passion for the craft allow me to ensure every client leaves satisfied with a style that truly reflects their vision.</p>
+                    
+                </div>
+                <img src="your-hair-style.jpg" alt="Gallery">
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <h3>Software Development Skills</h3>
+            <ul>
+                <li>Programming Languages: Go, HTML, CSS, JavaScript</li>
+                <li>Tools: Git, VS Code, Docker</li>
+            </ul>
+
+            <h3>Hairdressing Skills</h3>
+            <ul>
+                <li>Plaiting & Braiding</li>
+                <li>Styling</li>
+                <li>Hair Coloring & Treatment</li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Doreen_Atieno_Onyango. All Rights Reserved.</p>
+
+    </footer>
+
 </body>
 </html>
