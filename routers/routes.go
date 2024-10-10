@@ -9,16 +9,31 @@ import (
 )
 
 var rts = map[string]bool{
-	"/": true,
+	"/":          true,
+	"/contacts":  true,
+	"/portfolio": true,
+	"/skills":    true,
 }
 
 func Routes(mux *http.ServeMux) {
-	dir := utils.GetProjectRoot("sections", "static")
+	dir := utils.GetProjectRoot("pages", "static")
 	fServer := http.FileServer(http.Dir(dir))
 	mux.Handle("/static", http.StripPrefix("/static", fServer))
 
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		controllers.Welcomecontroller(w, r)
+	})
+
+	mux.HandleFunc("/contacts", func(w http.ResponseWriter, r *http.Request) {
+		controllers.ContactsController(w, r)
+	})
+
+	mux.HandleFunc("/portfolio", func(w http.ResponseWriter, r *http.Request) {
+		controllers.PortfolioController(w, r)
+	})
+
+	mux.HandleFunc("/skills", func(w http.ResponseWriter, r *http.Request) {
+		controllers.SkillController(w, r)
 	})
 }
 
