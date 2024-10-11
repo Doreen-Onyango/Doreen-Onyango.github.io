@@ -18,7 +18,7 @@ var rts = map[string]bool{
 func Routes(mux *http.ServeMux) {
 	dir := utils.GetProjectRoot("pages", "static")
 	fServer := http.FileServer(http.Dir(dir))
-	mux.Handle("/static", http.StripPrefix("/static", fServer))
+	mux.Handle("/static/", http.StripPrefix("/static/", fServer))
 
 	mux.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		controllers.Welcomecontroller(w, r)
