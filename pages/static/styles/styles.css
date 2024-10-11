@@ -32,9 +32,11 @@ nav a {
 }
 
 .container {
-        width: 100%;
-        margin: 180px 0 180px 30px;
-        padding: 2rem;
+        max-width: 900%;
+        /* width: 900px; */
+        height: 300px;
+        margin: 180px 0 180px 0px;
+        padding: 40px;
         background-color: #5bc0be;
         border-radius: 20px;
         text-align: center;
