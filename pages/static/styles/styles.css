@@ -9,7 +9,7 @@ body {
 header {
     background-color: #1c2541;
     color: #6fffe9;
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     width: 100%; 
     position: absolute;
@@ -21,7 +21,7 @@ header {
 nav {
     display: flex;
     justify-content: center;
-    background-color: #e21414;
+    background-color: #3a506b;
     padding: 0.5rem;
 }
 
@@ -32,15 +32,14 @@ nav a {
 }
 
 .container {
-        width: 88%;
-        margin: 2rem;
+        width: 100%;
+        margin: 180px 0 180px 30px;
         padding: 2rem;
         background-color: #5bc0be;
         border-radius: 20px;
         text-align: center;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         left: 0;
-
 }
 
 h1,
