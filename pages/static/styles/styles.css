@@ -11,19 +11,21 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, var(--primary), var(--deep-blue));
+  /* background: linear-gradient(135deg, var(--primary), var(--deep-blue)); */
   color: var(--white);
   line-height: 1.6;
+  overflow-x: hidden; /* Ensures no horizontal scrolling */
+  z-index: 9999;
 }
 
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
   
 }
 
-/* Header Styles */
 header {
   height: 100vh;
   display: flex;
@@ -31,9 +33,9 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* background: linear-gradient(135deg, var(--primary), var(--deep-blue)); */
   background-image: url('../images/hom.png');
   background-size: cover;
+  background-position: center;
 }
 
 .typing-container {
@@ -88,10 +90,8 @@ h1 {
   background-color: var(--deep-blue);
 }
 
-/* Landing Page Layout */
 #landing {
   padding: 80px 0;
-  background-color: var(--light-blue);
   color: var(--deep-blue);
 }
 
@@ -133,7 +133,6 @@ h1 {
   margin-top: 0;
 }
 
-/* Projects Section */
 #projects {
   padding: 50px 0;
   background-color: var(--light-blue);
@@ -193,7 +192,6 @@ h1 {
   background-color: var(--deep-blue);
 }
 
-/* Skills Section */
 #skills {
   background-color: var(--light-blue);
   color: var(--deep-blue);
@@ -221,7 +219,6 @@ h1 {
   margin-bottom: 10px;
 }
 
-/* Creative Highlights Section */
 #creative-highlights {
   padding: 50px 0;
 }
@@ -264,7 +261,6 @@ h1 {
   transform: translateY(0);
 }
 
-/* Contact Section */
 #contact {
   background-color: var(--white);
   color: var(--deep-blue);
@@ -311,7 +307,6 @@ button:hover {
   }
 }
 
-/* Footer */
 footer {
   background-color: var(--deep-blue);
   color: var(--white);
@@ -330,7 +325,6 @@ footer {
   color: var(--light-blue);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   h1 {
     font-size: 3rem;
@@ -355,36 +349,6 @@ footer {
   }
 }
 
-.type__StyledType {
-  display: inline-block;
-  overflow: hidden;
-  border-right: 0.15em solid var(--white);
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: 0.15em;
-  animation: typing 3.5s steps(30, end), blink-caret 0.75s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: var(--white);
-  }
-}
-
-/* Featured In Section */
 #featured-in {
   background-color: var(--white);
   color: var(--deep-blue);
@@ -420,3 +384,28 @@ footer {
 .feature-item a:hover {
   color: var(--deep-blue);
 }
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .tagline {
+    font-size: 1rem;
+  }
+
+  .profile-image img {
+    width: 180px;
+    height: 180px;
+  }
+
+  form {
+    max-width: 90%;
+  }
+}
+
