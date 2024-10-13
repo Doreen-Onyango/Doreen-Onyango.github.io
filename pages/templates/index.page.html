@@ -1,50 +1,256 @@
-<!DOCTYPE html>
-<html lang="en">
+    <html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doreen_Atieno - About Me</title>
-    <link rel="stylesheet" href="../static/styles/styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Doreen's Developer Portfolio</title>
+        <link rel="stylesheet" href="../static/styles/styles.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    </head>
 
 <body>
     <header>
-        <h1>Doreen Atieno Onyango</h1>
-        <p>Software Developer & Hairdresser</p> 
-        <nav>
-        <a href="/">About Me</a>
-        <a href="/portfolio">Portfolio</a>
-        <a href="/skills">Skills</a>
-        <a href="/contacts">Contact</a>
-    </nav>
+        <div class="container">
+            <div class="dev-animation">
+                <svg width="200" height="200" viewBox="0 0 200 200">
+                    <circle cx="100" cy="100" r="90" fill="none" stroke="#ffffff" stroke-width="4" />
+                    <text x="100" y="100" text-anchor="middle" alignment-baseline="middle" fill="#ffffff"
+                        font-size="24">
+                        &lt;/&gt;
+                    </text>
+                </svg>
+            </div>
+            <h1>
+                <div class="typing-container">
+                    <span class="typing-text type__StyledType">Doreen Atieno Onyango</span>
+                </div>
+            </h1>
+            <p class="tagline">
+                Software Engineer & Hairdresser | Crafting Creative Solutions
+            </p>
+            <button id="about-btn" class="cta-button">Learn More About Me</button>
+        </div>
     </header>
-   
-<center> 
-    <div class="container" >
-        <section id="about" class="section">
-            <h2>About Me</h2>
-  <p>
-            Ever since I was a child, I have been passionate about <span class="highlight">software development</span>. The idea of creating something that can solve real-world problems through code has always fascinated me.
-        </p>
-        <p>
-            Alongside my love for development, I also discovered a natural talent for <span class="highlight">hairdressing</span> at a young age. I realized this talent when I had the chance to plait someone's hair, a moment that was like a dream come true. My journey in hairdressing has been just as creative and rewarding as my journey in tech.
-        </p>
-        <p>
-            Over time, as I learned and watched others style hair, my passion for software development only grew stronger. I have come to understand that my creativity knows no bounds, whether I'm designing a beautiful hairstyle or crafting an elegant user interface.
-        </p>
-        <p>
-            Now, I am on a path to becoming a <span class="highlight">UX/UI developer</span>, where I can merge my technical skills with my artistic vision. I believe that my unique combination of passions—software development and creativity in hairdressing—will help me deliver intuitive and aesthetically pleasing user experiences.
-        </p>        </section>
-    </div>
-</center>
-    
-    <div class="footer">
-        <footer>
-            <p>&copy; 2024 Doreen_Atieno_Onyango. All Rights Reserved.</p>
-        </footer>
-    </div>
 
+    <section id="landing">
+        <div class="container">
+            <div class="landing-content">
+                <div class="profile-image">
+                    <img src="../static/images/image.png"
+                        alt="Doreen smiling, wearing a blue t-shirt against a white background at zone01Kisumu"
+                        width="400" height="400" />
+                </div>
+                <div class="about-me">
+                    <h2>About Me</h2>
+                    <p>
+                        Hello! I'm Doreen, a passionate software engineer with a unique
+                        twist – I'm also a skilled hairdresser. My journey into the world
+                        of coding began when I was young, tinkering with my first computer
+                        and marveling at the endless possibilities it presented. As I grew
+                        older, I discovered another creative outlet in hairdressing,
+                        finding joy in transforming people's looks and boosting their
+                        confidence.
+                    </p>
+                    <p>
+                        These two seemingly different paths have actually fueled my
+                        creativity in remarkable ways. The precision and problem-solving
+                        skills I've honed as a developer complement the artistic vision
+                        and attention to detail I've cultivated as a hairstylist. This
+                        blend of technical expertise and creative flair allows me to
+                        approach software development with a unique perspective, crafting
+                        solutions that are not only functional but also intuitive and
+                        aesthetically pleasing.
+                    </p>
+                </div>
+                <div class="landing-gallery">
+                    <img src="../static/images/d1.jpg"
+                        alt="Doreen's coding setup with multiple monitors and a sleek desk" width="200" height="200" />
+                    <img src="../static/images/dg.jpg" alt="A collection of professional hairstyling tools and products"
+                        width="200" height="200" />
+                    <img src="../static/images/d2.jpg" alt="A close-up of a computer screen showing colorful code"
+                        width="200" height="200" />
+                    <img src="../static/images/d3.jpg" alt="Before and after images of a dramatic hair transformation"
+                        width="200" height="200" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="../static/images/agrm.jpg"
+                        alt="HairStyle AR app interface showing virtual hairstyle try-on" width="300" height="200" />
+                    <h3>Agri Mentor</h3>
+                    <p>
+                        An augmented reality app that allows users to virtually try on
+                        different hairstyles. Built with Unity and ARCore, this project
+                        combines my passion for tech and hairdressing.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://aistudio.google.com/app/apikey">Live Demo</a>
+                        <a href="https://github.com/Doreen-Onyango/Agri-Mentor">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="../static/images/grpie.jpg"
+                        alt="DevSalon web application dashboard showing project collaboration features" width="300"
+                        height="200" />
+                    <h3>Groupie Tracker</h3>
+                    <p>
+                        A web application for Artists to showcase their projects and
+                        collaborate. Built with Go and JavaScript, featuring real-time
+                        chat and project management tools.
+                    </p>
+                    <div class="project-links">
+                        <a href="doreen-portfolio/projects/devsalon">Live Demo</a>
+                        <a href="https://github.com/Doreen-Onyango/groupie-tracker">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="../static/images/ascii-art.png"
+                        alt="EcoTrack mobile app showing energy and water usage graphs" width="300" height="200" />
+                    <h3>Ascii Art Generator</h3>
+                    <p>
+                        This is a program that generates ASCII art based on a given string
+                        and banner style specified. The program uses a web interface that
+                        is appealing, intuitive and user friendly to displays the results.
+                    </p>
+                    <div class="project-links">
+                        <a href="doreen-portfolio/projects/ecotrack">Live Demo</a>
+                        <a href="https://github.com/Doreen-Onyango/ascii-art-web-dockerize">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fas fa-code-alt skill-icon"></i>
+                    <p>Go</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js-square skill-icon"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-rust skill-icon"></i>
+                    <p>Rust</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-node-js skill-icon"></i>
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database skill-icon"></i>
+                    <p>SQL</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-mobile-alt skill-icon"></i>
+                    <p>Responsive Design</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-cut skill-icon"></i>
+                    <p>Hairdressing</p>
+                </div>
+                <!-- <div class="skill-item">
+            <i class="fas fa-cogs skill-icon"></i>
+            <p>Rust</p>
+          </div>
+          <div class="skill-item">
+            <i class="fas fa-code skill-icon"></i>
+            <p>Go</p>
+          </div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="creative-highlights">
+        <div class="container">
+            <h2>Creative Highlights</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="../static/images/h1.jpg"
+                        alt="Elegant updo with intricate braiding, soft tendrils framing face" width="250"
+                        height="250" />
+                    <div class="gallery-caption">
+                        Elegant Updo: Intricate braiding with soft face-framing tendrils
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../static/images/h2.jpg" alt="Vibrant blue ombre hair, wavy texture, medium length"
+                        width="250" height="250" />
+                    <div class="gallery-caption">
+                        Blue Ombre: Vibrant color melt from dark roots to electric blue
+                        ends
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../static/images/h3.jpg" alt="Pixie cut with textured top and close-cropped sides"
+                        width="250" height="250" />
+                    <div class="gallery-caption">
+                        Edgy Pixie: Textured top with close-cropped sides for a bold look
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="../static/images/h4.jpg" alt="Long, beachy waves with subtle balayage highlights"
+                        width="250" height="250" />
+                    <div class="gallery-caption">
+                        Beachy Waves: Natural-looking balayage on long, tousled locks
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured-in">
+        <div class="container">
+            <h2>Featured In</h2>
+            <div class="feature-item">
+                <i class="fas fa-newspaper"></i>
+                <p>
+                    Thrilled to be featured in
+                    <a href="https://mailchi.mp/uclga/weekly-online-press-review-of-news-of-african-local-governments-revue-de-presse-en-ligne-des-collectivits-locales-africaines-1807201?e=625bd2b2a5"
+                        target="_blank" rel="noopener noreferrer">@UCLGAfrica's newsletter</a>! Read about my journey as
+                    a developer and hairdresser.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required />
+                <input type="email" name="email" placeholder="Your Email" required />
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://ke.linkedin.com/in/doreen-atieno-466104239" target="_blank"
+                    rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Doreen-Onyango" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://x.com/DoreenAtieno17" target="_blank" rel="noopener noreferrer"><i
+                        class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2023 Doreen Onyango. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../static/styles/index.js"></script>
 </body>
 
 </html>
