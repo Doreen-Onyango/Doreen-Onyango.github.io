@@ -1,9 +1,9 @@
 :root {
-  --vibrant-pink: #ff69b4;
-  --deep-purple: #8a2be2;
-  --teal-accent: #00ced1;
-  --dark-gray: #333333;
-  --light-gray: #f5f5f5;
+  --vibrant-pink: #3C0753;
+  --deep-purple: #030637;
+  --teal-accent: #720455;
+  --dark-gray: #910A67;
+  --light-gray: #dad5d7;
 }
 
 * {
@@ -311,6 +311,48 @@ nav ul li a:hover {
 .form-group textarea {
   height: 150px;
 }
+
+/* General Styling for Contact Information Section */
+#contact-infor {
+  position: relative;
+  display: flex;
+  justify-content: flex-end; /* Aligns it to the right side */
+  padding: 20px;
+}
+
+.contact-info {
+  padding: 20px;
+  width: 250px; 
+ margin-top: -620px;
+  opacity: 0;
+  transform: translateX(100%); /* Initially hidden off to the right */
+  animation: slideIn 0.5s ease forwards; /* Animation for sliding in */
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.contact-icon{
+  color: #6b18d8; /* Icon color */
+  font-size: 100px;
+  margin-right: 10px;
+}
+
+/* Slide-in Animation */
+@keyframes slideIn {
+  from {
+      opacity: 0;
+      transform: translateX(100%); /* Starts from right side */
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0); /* Ends in original position */
+  }
+}
+
 
 .social-links {
   display: flex;
