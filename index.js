@@ -104,3 +104,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
   });
 });
+
+// drip any when page is opened
+document.getElementById("contact-info").addEventListener("click", function() {
+  const icons = document.querySelectorAll(".contact-icon");
+  
+  icons.forEach((icon, index) => {
+      setTimeout(() => {
+          icon.classList.add("drip-in");
+      }, index * 300); // Delay each icon by 300ms
+  });
+});
