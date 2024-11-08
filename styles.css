@@ -322,11 +322,13 @@ nav ul li a:hover {
 
 .contact-info {
   padding: 20px;
+  position: flex;
   width: 250px; 
- margin-top: -620px;
+ margin-top: -610px;
+ margin-left: 1000px;
   opacity: 0;
-  transform: translateX(100%); /* Initially hidden off to the right */
-  animation: slideIn 0.5s ease forwards; /* Animation for sliding in */
+  transform: translateX(100%); 
+  animation: slideIn 0.5s ease forwards; 
 }
 
 .contact-method {
@@ -336,20 +338,20 @@ nav ul li a:hover {
 }
 
 .contact-icon{
-  color: #6b18d8; /* Icon color */
-  font-size: 100px;
-  margin-right: 10px;
+  color: #3C0753;
+  font-size: 30px;
+  margin-right: 15px;
 }
 
 /* Slide-in Animation */
 @keyframes slideIn {
   from {
       opacity: 0;
-      transform: translateX(100%); /* Starts from right side */
+      transform: translateX(100%);
   }
   to {
       opacity: 1;
-      transform: translateX(0); /* Ends in original position */
+      transform: translateX(0);
   }
 }
 
