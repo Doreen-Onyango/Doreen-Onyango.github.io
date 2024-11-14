@@ -17,12 +17,14 @@ body {
   background-color: var(--light-gray);
   color: var(--dark-gray);
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  overflow-x: hidden;
 }
 
 header {
@@ -56,6 +58,10 @@ nav ul li a:hover {
   color: var(--vibrant-pink);
 }
 
+.hamburger {
+  display: none;
+}
+
 .background-curves {
   position: fixed;
   top: 0;
@@ -73,16 +79,16 @@ nav ul li a:hover {
 }
 
 @keyframes flowCurves {
+
   0%,
   100% {
-    d: path(
-      "M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,101.3C960,75,1056,85,1152,101.3C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-    );
+    d: path("M0,96L48,112C96,128,192,160,288,186.7C384,213,480,235,576,213.3C672,192,768,128,864,101.3C960,75,1056,85,1152,101.3C1248,117,1344,139,1392,149.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      );
   }
+
   50% {
-    d: path(
-      "M0,160L48,138.7C96,117,192,75,288,64C384,53,480,75,576,101.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
-    );
+    d: path("M0,160L48,138.7C96,117,192,75,288,64C384,53,480,75,576,101.3C672,128,768,160,864,165.3C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      );
   }
 }
 
@@ -96,7 +102,8 @@ nav ul li a:hover {
   background-size: cover;
   background-position: center;
   position: relative;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 .hero-content {
@@ -316,19 +323,20 @@ nav ul li a:hover {
 #contact-infor {
   position: relative;
   display: flex;
-  justify-content: flex-end; /* Aligns it to the right side */
+  justify-content: flex-end;
+  /* Aligns it to the right side */
   padding: 20px;
 }
 
 .contact-info {
   padding: 20px;
   position: flex;
-  width: 250px; 
- margin-top: -610px;
- margin-left: 1000px;
+  width: 250px;
+  margin-top: -710px;
+  margin-left: 900px;
   opacity: 0;
-  transform: translateX(100%); 
-  animation: slideIn 0.5s ease forwards; 
+  transform: translateX(100%);
+  animation: slideIn 0.5s ease forwards;
 }
 
 .contact-method {
@@ -337,28 +345,32 @@ nav ul li a:hover {
   margin-bottom: 30px;
 }
 
-.contact-icon{
+.contact-icon {
   color: #3C0753;
   font-size: 30px;
   margin-right: 15px;
-  transform: translateY(0px); /* Start slightly above */
-    transition: opacity 0.5s ease, transform 0.5s ease;
-  
+  transform: translateY(0px);
+  /* Start slightly above */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+
 }
+
 .contact-icon.drip-in {
   opacity: 1;
-  transform: translateY(0); /* Slide into place */
+  transform: translateY(0);
+  /* Slide into place */
 }
 
 /* Slide-in Animation */
 @keyframes slideIn {
   from {
-      opacity: 0;
-      transform: translateX(100%);
+    opacity: 0;
+    transform: translateX(100%);
   }
+
   to {
-      opacity: 1;
-      transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
 
@@ -387,6 +399,10 @@ footer {
   text-align: center;
   padding: 20px 0;
   margin-top: 100px;
+  bottom: 0;
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
+  /* position: fixed; */
 }
 
 @keyframes fadeInUp {
@@ -394,6 +410,7 @@ footer {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -433,7 +450,48 @@ footer {
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1170px) {
+
+  nav ul {
+    align-items: center;
+    position: fixed;
+  }
+
+  .contact-info {
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  nav ul {
+    align-items: center;
+    position: fixed;
+  }
+
+  nav ul li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .hero {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav ul {
+    align-items: left;
+    position: fixed;
+  }
+
   .about-content {
     flex-direction: column;
   }
@@ -445,5 +503,44 @@ footer {
 
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 680px) {
+
+  nav ul {
+    align-items: left;
+    position: fixed;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  nav ul {
+    display: none;
+    /* Hide the menu */
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--deep-purple);
+  }
+
+  .nav-active {
+    display: block;
+    position: absolute;
+    background-color: var(--light-gray);
+    right: 0;
+    top: 60px;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-active li {
+    margin: 10px 0;
   }
 }
