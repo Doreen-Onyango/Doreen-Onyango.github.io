@@ -128,3 +128,16 @@ document.querySelectorAll('#nav-menu a').forEach(link => {
     navMenu.classList.remove("nav-active");
   });
 });
+
+const themeToggle = document.getElementById("theme-toggle");
+
+themeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-theme");
+
+  // Change the button text based on the theme
+  if (document.body.classList.contains("dark-theme")) {
+    themeToggle.textContent = "☀️ Light Mode";
+  } else {
+    themeToggle.textContent = "🌙 Dark Mode";
+  }
+});
