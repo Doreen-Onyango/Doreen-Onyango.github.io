@@ -1,24 +1,37 @@
 :root {
   --icon-color: #3C0753;
-  --text-color:#ffffff
   --secondary-color: #030637;
-  --tertiary-color: #720455;
+  --tertiary-color: #630349;
   --primary-color: #910A67;
   --background-color: #dad5d7;
 }
+
 .dark-theme {
---icon-color: #dab3ff;
+  --icon-color: #dab3ff;
   --secondary-color: #02022e;
-  --tertiary-color: #50093d;
+  --tertiary-color: #140210;
   --primary-color: #731b4d;
-  --background-color: #1e1e1e;
+  --background-color: #1f1d1d;
 }
+
+img {
+  filter: none;
+  /* No filter for light mode */
+}
+
+.dark-theme img {
+  filter: grayscale(100%);
+  /* Adjusts brightness and contrast for dark mode */
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
+
 
 body {
   background-color: var(--background-color);
@@ -32,6 +45,12 @@ body {
   margin: 0 auto;
   padding: 0 20px;
   overflow-x: hidden;
+}
+
+#theme-toggle {
+  background-color: #630349;
+  color: var(--icon-color);
+  border: none;
 }
 
 header {
@@ -55,7 +74,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -67,6 +86,10 @@ nav ul li a:hover {
 
 .hamburger {
   display: none;
+}
+
+.dark-theme .hamburger {
+  color: var(--primary-color);
 }
 
 .background-curves {
@@ -201,15 +224,24 @@ nav ul li a:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.dark-theme .project-card {
+  background-color: var(--background-color);
+}
+
 .project-image {
   height: 200px;
   background-size: cover;
   background-position: center;
 }
 
+.dark-theme .project-image {
+  filter: grayscale(100%);
+}
+
 .project-content {
   padding: 20px;
 }
+
 
 .project-title {
   font-size: 1.5rem;
@@ -303,6 +335,10 @@ nav ul li a:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.dark-theme .contact-form {
+  background-color: var(--background-color);
+}
+
 .form-group {
   margin-bottom: 20px;
 }
@@ -322,6 +358,12 @@ nav ul li a:hover {
   font-size: 1rem;
 }
 
+.dark-theme .form-group input,
+.dark-theme .form-group textarea {
+  background-color: #3C0753;
+  color: var(--icon-color);
+}
+
 .form-group textarea {
   height: 150px;
 }
@@ -331,7 +373,6 @@ nav ul li a:hover {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  /* Aligns it to the right side */
   padding: 20px;
 }
 
@@ -435,8 +476,16 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.dark-theme .experience-content {
+  background-color: var(--background-color);
+}
+
 .experience-item {
   margin-bottom: 30px;
+}
+
+.dark-theme .experience-item {
+  background-color: var(--background-color);
 }
 
 .experience-title {
@@ -450,6 +499,7 @@ footer {
   color: var(--icon-color);
   margin-bottom: 10px;
 }
+
 
 .experience-description {
   font-size: 1rem;
