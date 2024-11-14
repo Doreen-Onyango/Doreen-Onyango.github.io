@@ -136,8 +136,8 @@ themeToggle.addEventListener("click", () => {
 
   // Change the button text based on the theme
   if (document.body.classList.contains("dark-theme")) {
-    themeToggle.textContent = "☀️ Light Mode";
+    themeToggle.textContent = "☀️ ";
   } else {
-    themeToggle.textContent = "🌙 Dark Mode";
+    themeToggle.textContent = "🌙";
   }
 });
