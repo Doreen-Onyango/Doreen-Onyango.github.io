@@ -26,11 +26,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
   // Form submission handling
   const contactForm = document.querySelector(".contact-form");
   contactForm.addEventListener("submit", (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     // Here you would typically send the form data to a server
     // alert("Thank you for your message! I'll get back to you soon.");
     // contactForm.reset();
   });
+  
+ 
+  function clearForm() {
+    setTimeout(function() {
+      document.querySelector(".contact-form").reset();
+    }, 500); 
+  }
+
 
   // Easter egg: Konami code
   let konamiCode = [
