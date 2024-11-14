@@ -1,11 +1,18 @@
 :root {
-  --vibrant-pink: #3C0753;
-  --deep-purple: #030637;
-  --teal-accent: #720455;
-  --dark-gray: #910A67;
-  --light-gray: #dad5d7;
+  --icon-color: #3C0753;
+  --text-color:#ffffff
+  --secondary-color: #030637;
+  --tertiary-color: #720455;
+  --primary-color: #910A67;
+  --background-color: #dad5d7;
 }
-
+.dark-theme {
+--icon-color: #dab3ff;
+  --secondary-color: #02022e;
+  --tertiary-color: #50093d;
+  --primary-color: #731b4d;
+  --background-color: #1e1e1e;
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,8 +21,8 @@
 }
 
 body {
-  background-color: var(--light-gray);
-  color: var(--dark-gray);
+  background-color: var(--background-color);
+  color: var(--primary-color);
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -28,9 +35,9 @@ body {
 }
 
 header {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--background-color);
   backdrop-filter: blur(5px);
-  color: var(--dark-gray);
+  color: var(--primary-color);
   padding: 20px 0;
   position: fixed;
   width: 100%;
@@ -48,14 +55,14 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--deep-purple);
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: var(--vibrant-pink);
+  color: var(--icon-color);
 }
 
 .hamburger {
@@ -116,19 +123,19 @@ nav ul li a:hover {
   font-size: 5rem;
   margin-bottom: 20px;
   font-weight: 700;
-  color: var(--deep-purple);
+  color: var(--secondary-color);
   font-family: "Dancing Script", cursive;
 }
 
 .hero p {
   font-size: 1.5rem;
   margin-bottom: 30px;
-  color: var(--teal-accent);
+  color: var(--tertiary-color);
 }
 
 .btn {
   display: inline-block;
-  background: linear-gradient(45deg, var(--vibrant-pink), var(--deep-purple));
+  background: linear-gradient(45deg, var(--icon-color), var(--secondary-color));
   color: white;
   padding: 12px 24px;
   border-radius: 30px;
@@ -150,7 +157,7 @@ nav ul li a:hover {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 50px;
-  color: var(--dark-gray);
+  color: var(--primary-color);
 }
 
 .about-content {
@@ -221,7 +228,7 @@ nav ul li a:hover {
 }
 
 .tag {
-  background-color: var(--teal-accent);
+  background-color: var(--tertiary-color);
   color: white;
   padding: 5px 10px;
   border-radius: 20px;
@@ -241,7 +248,7 @@ nav ul li a:hover {
   min-width: 200px;
   margin: 20px;
   text-align: center;
-  background: linear-gradient(45deg, var(--vibrant-pink), var(--deep-purple));
+  background: linear-gradient(45deg, var(--icon-color), var(--secondary-color));
   border-radius: 20px;
   padding: 20px;
   color: white;
@@ -271,13 +278,13 @@ nav ul li a:hover {
 
 .skill-progress {
   height: 100%;
-  background-color: var(--vibrant-pink);
+  background-color: var(--icon-color);
   width: 0;
   transition: width 1s ease-in-out;
 }
 
 .featured-highlight {
-  background: linear-gradient(45deg, var(--vibrant-pink), var(--deep-purple));
+  background: linear-gradient(45deg, var(--icon-color), var(--secondary-color));
   color: white;
   padding: 15px;
   border-radius: 10px;
@@ -303,7 +310,7 @@ nav ul li a:hover {
 .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: var(--dark-gray);
+  color: var(--primary-color);
 }
 
 .form-group input,
@@ -385,16 +392,16 @@ nav ul li a:hover {
   display: inline-block;
   margin: 0 10px;
   font-size: 1.5rem;
-  color: var(--dark-gray);
+  color: var(--primary-color);
   transition: color 0.3s ease;
 }
 
 .social-link:hover {
-  color: var(--vibrant-pink);
+  color: var(--icon-color);
 }
 
 footer {
-  background: linear-gradient(45deg, var(--vibrant-pink), var(--deep-purple));
+  background: linear-gradient(45deg, var(--icon-color), var(--secondary-color));
   color: white;
   text-align: center;
   padding: 20px 0;
@@ -434,19 +441,19 @@ footer {
 
 .experience-title {
   font-size: 1.8rem;
-  color: var(--deep-purple);
+  color: var(--secondary-color);
   margin-bottom: 5px;
 }
 
 .experience-company {
   font-size: 1.2rem;
-  color: var(--vibrant-pink);
+  color: var(--icon-color);
   margin-bottom: 10px;
 }
 
 .experience-description {
   font-size: 1rem;
-  color: var(--dark-gray);
+  color: var(--primary-color);
   line-height: 1.6;
 }
 
@@ -526,13 +533,13 @@ footer {
     display: block;
     font-size: 1.5rem;
     cursor: pointer;
-    color: var(--deep-purple);
+    color: var(--secondary-color);
   }
 
   .nav-active {
     display: block;
     position: absolute;
-    background-color: var(--light-gray);
+    background-color: var(--background-color);
     right: 0;
     top: 60px;
     width: 100%;
