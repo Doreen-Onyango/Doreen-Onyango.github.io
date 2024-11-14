@@ -115,3 +115,16 @@ document.getElementById("contact-info").addEventListener("click", function() {
       }, index * 300); // Delay each icon by 300ms
   });
 });
+
+function toggleMenu() {
+  const navMenu = document.getElementById("nav-menu");
+  navMenu.classList.toggle("nav-active");
+}
+
+// Close the menu when any nav link is clicked
+document.querySelectorAll('#nav-menu a').forEach(link => {
+  link.addEventListener('click', () => {
+    const navMenu = document.getElementById("nav-menu");
+    navMenu.classList.remove("nav-active");
+  });
+});
