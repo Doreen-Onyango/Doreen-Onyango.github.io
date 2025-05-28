@@ -273,6 +273,24 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
+.project-title a {
+  color: var(--icon-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-title a:hover {
+  color: var(--tertiary-color);
+}
+
+.dark-theme .project-title a {
+  color: var(--icon-color);
+}
+
+.dark-theme .project-title a:hover {
+  color: var(--tertiary-color);
+}
+
 .project-description {
   font-size: 1rem;
   color: #666;
