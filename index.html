@@ -10,6 +10,7 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@400;700&family=Dancing+Script&display=swap"
     rel="stylesheet" />
   <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <script src="menu.js"></script>
 </head>
 
 <body>
@@ -24,7 +25,11 @@
     <div class="container">
       <button id="theme-toggle">🌙</button>
       <nav>
-        <div class="hamburger" onclick="toggleMenu()">&#9776;</div> <!-- Hamburger icon -->
+        <button class="hamburger" aria-label="Toggle menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
         <ul id="nav-menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -52,24 +57,26 @@
         <div class="about-content">
           <div class="about-text animate-fadeInUp">
             <p>
-              Hello! I'm Doreen, a passionate software engineer with a unique
-              twist – I'm also a skilled hairdresser. My journey into the
-              world of coding began when I was young, tinkering with my first
-              computer and marveling at the endless possibilities it
-              presented. As I grew older, I discovered another creative outlet
-              in hairdressing, finding joy in transforming people's looks and
-              boosting their confidence.
+              Hello! I'm Doreen, a passionate software engineer with a strong interest 
+              in building innovative digital solutions.
+
             </p>
             <p>
-              These two seemingly different paths have actually fueled my
-              creativity in remarkable ways. The precision and problem-solving
-              skills I've honed as a developer complement the artistic vision
-              and attention to detail I've cultivated as a hairstylist. This
-              blend of technical expertise and creative flair allows me to
-              approach software development with a unique perspective,
-              crafting solutions that are not only functional but also
-              intuitive and aesthetically pleasing.
+              Over the years, I've developed expertise in web development, crafting 
+              responsive and user-friendly interfaces that blend functionality with 
+              great user experience. More recently, I've been diving into blockchain 
+              technology, exploring decentralized systems and building applications 
+              that leverage the power of Web3.
+
             </p>
+            <p>
+              I enjoy combining clean, efficient code with thoughtful design to build 
+              solutions that are impactful and scalable. Whether it's developing 
+              full-stack web apps or exploring smart contracts and decentralized platforms, 
+              I'm driven by a passion for continuous learning and innovation in tech.
+              
+            </p>
+            
             <p class="featured-highlight">
               I'm thrilled to have been featured in
               <a
@@ -183,19 +190,19 @@
               <li class="skill-item">
                 <span>React</span>
                 <div class="skill-bar">
-                  <div class="skill-progress" style="width: 80%"></div>
+                  <div class="skill-progress" style="width: 60%"></div>
                 </div>
               </li>
               <li class="skill-item">
-                <span>Vue.js</span>
+                <span>Next.js</span>
                 <div class="skill-bar">
-                  <div class="skill-progress" style="width: 70%"></div>
+                  <div class="skill-progress" style="width: 50%"></div>
                 </div>
               </li>
               <li class="skill-item">
-                <span>Angular</span>
+                <span>HTML/CSS</span>
                 <div class="skill-bar">
-                  <div class="skill-progress" style="width: 65%"></div>
+                  <div class="skill-progress" style="width: 75%"></div>
                 </div>
               </li>
             </ul>
@@ -218,7 +225,7 @@
               <li class="skill-item">
                 <span>Rust</span>
                 <div class="skill-bar">
-                  <div class="skill-progress" style="width: 70%"></div>
+                  <div class="skill-progress" style="width: 40%"></div>
                 </div>
               </li>
             </ul>
@@ -233,15 +240,9 @@
                 </div>
               </li>
               <li class="skill-item">
-                <span>Adobe XD</span>
+                <span>Miro</span>
                 <div class="skill-bar">
-                  <div class="skill-progress" style="width: 90%"></div>
-                </div>
-              </li>
-              <li class="skill-item">
-                <span>Sketch</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" style="width: 95%"></div>
+                  <div class="skill-progress" style="width: 40%"></div>
                 </div>
               </li>
             </ul>
